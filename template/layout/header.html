@@ -1,0 +1,88 @@
+<style type="text/css">
+    .control_panel,
+    .message_info {
+        display: inline-block;
+        vertical-align: top;
+        height: 67px;
+        margin-left: 56px;
+    }
+
+    .control_panel a,
+    .message_info a {
+        padding: 24px 10px;
+        display: inline-block;
+        color: #fff;
+        text-decoration: none;
+        font-family: sans-serif;
+    }
+
+    .control_panel img {
+        vertical-align: middle;
+    }
+
+    .logout > .name a,
+    .logout > .action a {
+        font-family: sans-serif;
+        color: #fff;
+        padding: 24px 0px;
+        display: inline-block;
+    }
+
+    .logout > .action a {
+        text-decoration: none;
+    }
+
+    .logout img {
+        vertical-align: middle;
+    }
+
+</style>
+<div class="header">
+    <div class="menu">
+        <!--<link rel="stylesheet" type="text/css" href="../css/style.css">-->
+        <div class="logo">
+            <a href="/water/"><img src="/water/css/image/logowater.png"></a>
+        </div>
+        <div class="control_panel">
+            <a href="/water/admin/admin_panel" class="adm"><span class="cp_icon user"></span>Администрирование</a>
+            <img src="/water/css/image/figure3.png">
+            <a href="/water/admin/logs"><span class="cp_icon hist"></span>Логи</a>
+        </div>
+        <div style="vertical-align: top; height: 67px; float: right;">
+            <div class="message_info">
+                <a href="/water/admin/list_orders_app" class="adm"><span class="tab"><?php echo get_count_unchecked_order(); ?></span><span class="cp_icon envelope"></span>Заявки</a>
+                <a href="/water/admin/admin_panel" class="adm"><span class="tab">3</span><span class="cp_icon task"></span>Задачи</a>
+            </div>
+            <div id="user_info">
+                <div class="logout">
+                    <div class="exit name"><a href="/water/backend.php?logout"><?php echo get_session_name() ?><span class="cp_icon square"></span></a></div>
+                    <div class="exit action"><a href="/water/backend.php?logout">выйти</a></div>
+                    <img src="/water/css/image/figure3.png">
+                    <!-- <a href=""><img src="/iwaterTest/css/image/garbage.png" style="padding: 0 10px;"></a> -->
+                </div>
+                <!--div class="site">
+                   кодировка: <a href="javascript:;" onclick="if (document.getElementById(\'charset\').style.display == \'none\') document.getElementById(\'charset\').style.display = \'\'; else document.getElementById(\'charset\').style.display = \'none\'">utf-8</a>
+                   <div style="display:none" id="charset">
+                      <ul>
+                         <li><a href="/dren/charset/windows-1251">windows-1251</a></li>
+                         <li><a href="/dren/charset/utf-8">utf-8</a></li>
+                   </ul>
+                   </div>
+                   <!--сайт: <a href="javascript:;" onclick="if (document.getElementById(\'sites\').style.display == \'none\') document.getElementById(\'sites\').style.display = \'\'; else document.getElementById(\'sites\').style.display = \'none\'">db.endesign.ru</a>-->
+
+                <!--div style="display:none" id="sites">
+                    <ul>
+                        <li><a href="/dren/site/drax">drax</a></li>
+                        <li><a href="/dren/site/manager">manager</a></li>
+                        <li><a href="/dren/site/endesign.ru">endesign.ru</a></li>
+                        <li><a href="/dren/site/chooseit.ru">chooseit.ru</a></li>
+                        <li><a href="/dren/site/cafemam.ru">cafemam.ru</a></li>
+                        <li><a href="/dren/site/roonix.ru">roonix.ru</a></li>
+                        <li><a href="/dren/site/print.endesign.ru">print.endesign.ru</a></li>
+                        <li><a href="/dren/site/design.pskovlive.ru">design.pskovlive.ru</a></li>
+                    </ul>
+                </div>
+            </div-->
+            </div>
+        </div>
+    </div>
