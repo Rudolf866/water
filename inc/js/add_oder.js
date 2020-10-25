@@ -24,7 +24,7 @@ $(function() {
         $.ajax({
             type: "POST",
             data: {client_num_l:value},
-            url: "/iwaterTest/backend.php",
+            url: "/water/backend.php",
             success: function(req){
                 request(req, 'list1');
             }
@@ -40,7 +40,7 @@ $(function() {
                 $.ajax({
                     type: "POST",
                     data: {client_num_s:opts[i].value},
-                    url: "/iwaterTest/backend.php",
+                    url: "/water/backend.php",
                     success: function(data){
                         insert_data(data, 'list1');
                     }
@@ -56,7 +56,7 @@ $(function() {
         $.ajax({
             type: "POST",
             data: {name_l:value},
-            url: "/iwaterTest/backend.php",
+            url: "/water/backend.php",
             success: function(req){
                 request(req, 'list2');
             }
@@ -72,7 +72,7 @@ $(function() {
                 $.ajax({
                     type: "POST",
                     data: {name_s:opts[i].value},
-                    url: "/iwaterTest/backend.php",
+                    url: "/water/backend.php",
                     success: function(data){
                         insert_data(data, 'list2');
                     }
@@ -88,7 +88,7 @@ $(function() {
         $.ajax({
             type: "POST",
             data: {address_l:value},
-            url: "/iwaterTest/backend.php",
+            url: "/water/backend.php",
             success: function(req){
                 request(req, 'list3');
             }
@@ -104,7 +104,7 @@ $(function() {
                 $.ajax({
                     type: "POST",
                     data: {address_s:opts[i].value},
-                    url: "/iwaterTest/backend.php",
+                    url: "/water/backend.php",
                     success: function(data){
                         insert_data(data, 'list3');
                     }
