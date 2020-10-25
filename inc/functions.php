@@ -6,34 +6,6 @@ session_start();
 require($_SERVER['DOCUMENT_ROOT'] . '/water/inc/Classes/DBConnect.php');
 
 
-//$res =connect_db();
-//var_dump($res);
-
-//function test()
-//{
-//    $dbh=connect_db();
-//    try {
-//        $res = $dbh->query("SELECT * FROM `iwater_users`;");
-//        $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-//
-//        $output_array = array();
-//
-//        $i = 0;
-//        while ($r = $res->fetch(PDO::FETCH_ASSOC)) {
-//            array_push($output_array, array($r['login']));
-//            $i++;
-//        }
-//
-//       return $output_array;
-//
-//    } catch (Exception $e) {
-//        echo 'Подключение не удалось: ' . $e->getMessage();
-//    }
-//
-//
-//}
-//$test = test();
-//var_dump($test);
 
 function path()
 {
@@ -97,8 +69,6 @@ function template($func = NULL)
 
 }
 
-//$test = template();
-//var_dump($test);
 
 function admin($path)
 {
